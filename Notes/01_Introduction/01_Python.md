@@ -141,7 +141,7 @@ Warning: It is never possible to paste more than one Python command
 time. You have to paste each command one at a time.
 
 Now that you've done this, just remember that you will get more out of
-the class by typing in code slowly and thinking about it--not cut and pasting.
+the class by typing in code slowly and thinking about it — not cut and pasting.
 
 ### Exercise 1.4: Where is My Bus?
 
