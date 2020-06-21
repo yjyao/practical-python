@@ -19,6 +19,7 @@ for i in count(1):
     pay += extra_payment
   principal = max(principal * (1 + interest_rate/12) - pay, 0)
   total_paid += pay
+  print(i, total_paid, principal)
   if not principal:
     break
 
