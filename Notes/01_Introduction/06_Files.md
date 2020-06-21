@@ -170,9 +170,9 @@ of column headers).
 
 `next()` returns the next line of text in the file. If you were to call it repeatedly, you would get successive lines.
 However, just so you know, the `for` loop already uses `next()` to obtain its data.
-Thus, you normally wouldn’t call it directly unless you’re trying to explicitly skip or read a single line as shown.
+Thus, you normally wouldn't call it directly unless you're trying to explicitly skip or read a single line as shown.
 
-Once you’re reading lines of a file, you can start to perform more processing such as splitting.
+Once you're reading lines of a file, you can start to perform more processing such as splitting.
 For example, try this:
 
 ```python
@@ -190,11 +190,11 @@ For example, try this:
 >>> f.close()
 ```
 
-*Note: In these examples, `f.close()` is being called explicitly because the `with` statement isn’t being used.*
+*Note: In these examples, `f.close()` is being called explicitly because the `with` statement isn't being used.*
 
 ### Exercise 1.27: Reading a data file
 
-Now that you know how to read a file, let’s write a program to perform a simple calculation.
+Now that you know how to read a file, let's write a program to perform a simple calculation.
 
 The columns in `portfolio.csv` correspond to the stock name, number of
 shares, and purchase price of a single stock holding.  Write a program called
@@ -212,7 +212,7 @@ Total cost 44671.15
 ### Exercise 1.28: Other kinds of "files"
 
 What if you wanted to read a non-text file such as a gzip-compressed
-datafile?  The builtin `open()` function won’t help you here, but
+datafile?  The builtin `open()` function won't help you here, but
 Python has a library module `gzip` that can read gzip compressed
 files.
 

@@ -278,7 +278,7 @@ you would use to convert each column into the appropriate type:
 ```
 
 The reason you can even create this list is that everything in Python
-is *first-class*.  So, if you want to have a list of functions, that’s
+is *first-class*.  So, if you want to have a list of functions, that's
 fine.  The items in the list you created are functions for converting
 a value `x` into a given type (e.g., `str(x)`, `int(x)`, `float(x)`).
 
@@ -295,7 +295,7 @@ Now, read a row of data from the above file:
 >>>
 ```
 
-As noted, this row isn’t enough to do calculations because the types
+As noted, this row isn't enough to do calculations because the types
 are wrong. For example:
 
 ```python
@@ -368,7 +368,7 @@ the values, one after the other. Try this:
 >>>
 ```
 
-Make sure you understand what’s happening in the above code.  In the
+Make sure you understand what's happening in the above code.  In the
 loop, the `func` variable is one of the type conversion functions
 (e.g., `str`, `int`, etc.) and the `val` variable is one of the values
 like `'AA'`, `'100'`.  The expression `func(val)` is converting a
@@ -386,7 +386,7 @@ The above code can be compressed into a single list comprehension.
 ### Exercise 2.25: Making dictionaries
 
 Remember how the `dict()` function can easily make a dictionary if you
-have a sequence of key names and values?  Let’s make a dictionary from
+have a sequence of key names and values?  Let's make a dictionary from
 the column headers:
 
 ```python
@@ -399,7 +399,7 @@ the column headers:
 >>>
 ```
 
-Of course, if you’re up on your list-comprehension fu, you can do the
+Of course, if you're up on your list-comprehension fu, you can do the
 whole conversion in a single step using a dict-comprehension:
 
 ```python
@@ -428,7 +428,7 @@ Just to illustrate, suppose you read data from a different datafile like this:
 >>>
 ```
 
-Let’s convert the fields using a similar trick:
+Let's convert the fields using a similar trick:
 
 ```python
 >>> types = [str, float, str, str, float, float, float, float, int]
@@ -448,7 +448,7 @@ Let’s convert the fields using a similar trick:
 Bonus: How would you modify this example to additionally parse the
 `date` entry into a tuple such as `(6, 11, 2007)`?
 
-Spend some time to ponder what you’ve done in this exercise. We’ll
+Spend some time to ponder what you've done in this exercise. We'll
 revisit these ideas a little later.
 
 [Contents](../Contents.md) \| [Previous (2.6 List Comprehensions)](06_List_comprehension.md) \| [Next (3 Program Organization)](../03_Program_organization/00_Overview.md)

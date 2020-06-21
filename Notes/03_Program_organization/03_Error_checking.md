@@ -337,7 +337,7 @@ other kinds of sanity checks in the function.  For example, should you
 check that the filename is a string, that types is a list, or anything
 of that nature?
 
-As a general rule, it’s usually best to skip such tests and to just
+As a general rule, it's usually best to skip such tests and to just
 let the program fail on bad inputs.  The traceback message will point
 at the source of the problem and can assist in debugging.
 
@@ -351,7 +351,7 @@ Checking for cases that "aren't supposed to happen" is often a good idea.
 ### Exercise 3.9: Catching exceptions
 
 The `parse_csv()` function you wrote is used to process the entire
-contents of a file.  However, in the real-world, it’s possible that
+contents of a file.  However, in the real-world, it's possible that
 input files might have corrupted, missing, or dirty data.  Try this
 experiment:
 
@@ -367,7 +367,7 @@ ValueError: invalid literal for int() with base 10: ''
 
 Modify the `parse_csv()` function to catch all `ValueError` exceptions
 generated during record creation and print a warning message for rows
-that can’t be converted.
+that can't be converted.
 
 The message should include the row number and information about the
 reason why it failed.  To test your function, try reading the file
@@ -398,8 +398,8 @@ be silenced if explicitly desired by the user.  For example:
 ```
 
 Error handling is one of the most difficult things to get right in
-most programs.  As a general rule, you shouldn’t silently ignore
-errors.  Instead, it’s better to report problems and to give the user
+most programs.  As a general rule, you shouldn't silently ignore
+errors.  Instead, it's better to report problems and to give the user
 an option to the silence the error message if they choose to do so.
 
 [Contents](../Contents.md) \| [Previous (3.2 More on Functions)](02_More_functions.md) \| [Next (3.4 Modules)](04_Modules.md)

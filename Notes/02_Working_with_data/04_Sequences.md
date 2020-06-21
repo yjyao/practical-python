@@ -339,8 +339,8 @@ emerged from the depths of a rusty C program.
 >>>
 ```
 
-Don’t do that! Not only does reading it make everyone’s eyes bleed,
-it’s inefficient with memory and it runs a lot slower.  Just use a
+Don't do that! Not only does reading it make everyone's eyes bleed,
+it's inefficient with memory and it runs a lot slower.  Just use a
 normal `for` loop if you want to iterate over data.  Use `enumerate()`
 if you happen to need the index for some reason.
 
@@ -358,7 +358,7 @@ Row 7: Couldn't convert: ['IBM', '', '70.44']
 >>>
 ```
 
-To do this, you’ll need to change a few parts of your code.
+To do this, you'll need to change a few parts of your code.
 
 ```python
 ...
@@ -372,7 +372,7 @@ for rowno, row in enumerate(rows, start=1):
 ### Exercise 2.16: Using the zip() function
 
 In the file `Data/portfolio.csv`, the first line contains column
-headers. In all previous code, we’ve been discarding them.
+headers. In all previous code, we've been discarding them.
 
 ```python
 >>> f = open('Data/portfolio.csv')
@@ -397,7 +397,7 @@ pair the file headers with a row of data:
 ```
 
 Notice how `zip()` paired the column headers with the column values.
-We’ve used `list()` here to turn the result into a list so that you
+We've used `list()` here to turn the result into a list so that you
 can see it. Normally, `zip()` creates an iterator that must be
 consumed by a for-loop.
 
@@ -456,9 +456,9 @@ name,date,time,shares,price
 >>>
 ```
 
-If you did it right, you’ll find that your program still works even
+If you did it right, you'll find that your program still works even
 though the data file has a completely different column format than
-before. That’s cool!
+before. That's cool!
 
 The change made here is subtle, but significant.  Instead of
 `portfolio_cost()` being hardcoded to read a single fixed file format,

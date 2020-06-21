@@ -157,7 +157,7 @@ is also sometimes performed using the `%` operator of strings.
 Documentation on various codes used with `%` can be found
 [here](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
 
-Although it’s commonly used with `print`, string formatting is not tied to printing.
+Although it's commonly used with `print`, string formatting is not tied to printing.
 If you want to save a formatted string. Just assign it to a variable.
 
 ```python
@@ -189,12 +189,12 @@ In this report, "Price" is the current share price of the stock and
 price.
 
 
-In order to generate the above report, you’ll first want to collect
+In order to generate the above report, you'll first want to collect
 all of the data shown in the table.  Write a function `make_report()`
 that takes a list of stocks and dictionary of prices as input and
 returns a list of tuples containing the rows of the above table.
 
-Add this function to your `report.py` file. Here’s how it should work
+Add this function to your `report.py` file. Here's how it should work
 if you try it interactively:
 
 ```python
@@ -270,7 +270,7 @@ This string is just a bunch of "-" characters under each field name. For example
 '---------- ---------- ---------- -----------'
 ```
 
-When you’re done, your program should produce the table shown at the top of this exercise.
+When you're done, your program should produce the table shown at the top of this exercise.
 
 ```
       Name     Shares      Price     Change

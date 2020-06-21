@@ -30,17 +30,17 @@ despite my best attempts to make the prerequisites clear.
 
 With this in mind, the course aims to teach Python through the general
 problem of manipulating data (stock market data in particular).  This
-domain has been chosen because it’s simple and something everyone
+domain has been chosen because it's simple and something everyone
 should know about it regardless of their background.  Just as an example,
 students with weak programming skills are still likely to know about
-common things like using a spreadsheet (e.g., Excel).  So, if they’re
+common things like using a spreadsheet (e.g., Excel).  So, if they're
 really stuck, you can tell them things like “well, this list of tuples
 is kind of like rows of data in a spreadsheet” or “a list
 comprehension is the same idea as applying an operation to a
 spreadsheet column and putting the result in a different column.”  The
 key idea is to stay grounded in a real-world setting as opposed to
 getting sidetracked into esoteric “computer science” problems (e.g.,
-“let’s go compute fibonacci numbers.”).
+“let's go compute fibonacci numbers.”).
 
 This problem domain also works well for introducing other programming
 topics.  For example, scientists/engineers might want to know about
@@ -65,7 +65,7 @@ brisk pace, showing short examples interactively as I go.  I often
 skip slides entirely in favor of live demos.  For example, you don't
 really need to do a bunch of slides on lists.  Just go to the
 interpreter and do some list examples live instead. Rule of thumb: No
-more than 1 minute per slide unless it’s something unusually tricky.
+more than 1 minute per slide unless it's something unusually tricky.
 Honestly, you could probably skip most of the slides and simply
 lecture using live demos if you feel that it works for you.  I often
 do this.
@@ -94,7 +94,7 @@ pull it up on the computer screen (which is being projected).  Near
 the end of the exercise time period, I will start discussing my
 solution code, emphasizes different bits on the screen and talking
 about them.  If there are any potential problems with the solution
-(including design considerations), I’ll also talk about it.  Emphasize
+(including design considerations), I'll also talk about it.  Emphasize
 to students that they may want to look at/copy solution code before
 going forward.
 
@@ -132,7 +132,7 @@ give students more time to keep working.  Together, Sections 2.2/2.3
 might take an hour or more.
 
 Section 2.4 has people explore the use of enumerate(), and zip().  I
-consider these functions essential so don’t skimp on it.
+consider these functions essential so don't skimp on it.
 
 Section 2.5 introduces the collections module.  There is a LOT that
 could be said about collections, but it won't be fully appreciated by
@@ -218,7 +218,7 @@ OO.  So, before starting this, I usually generally describe the OO
 examples with strings and lists to illustrate that they are “objects”
 and that the methods (invoked via .) do things with the object.
 Emphasize how the methods are attached to the object itself.  For
-example, you do items.append(x), you don’t call a separate function
+example, you do items.append(x), you don't call a separate function
 append(items, x).
 
 Section 4.1 introduces the class statement and shows people how to
@@ -242,7 +242,7 @@ Timing:   This is usually the end of the 2nd day.
 ## 5. Inside Objects
 
 This section takes students behind the scenes of the object system and
-how it’s built using dictionaries, how instances and classes are tied
+how it's built using dictionaries, how instances and classes are tied
 together, and how inheritance works.  However, most important part of
 this section is probably the material about encapsulation (private
 attributes, properties, slots, etc.)
@@ -259,8 +259,8 @@ An astute Python master will notice that I do not talk about advanced
 topics such as descriptors, or attribute access methods (`__getattr__`,
 `__setattr__`) at all.  I have found, through experience, that this is
 just too much mental overload for students taking the intro course.
-Everyone’s head is already on the verge of exploding at this point and
-if you go talk about how something like descriptors work, you’ll lose
+Everyone's head is already on the verge of exploding at this point and
+if you go talk about how something like descriptors work, you'll lose
 them for the rest of the day, if not the rest of the course.  Save it
 for an "Advanced Python" course.
 
@@ -284,18 +284,18 @@ like Unix pipes).  Again, this can be a really powerful way to process
 and think about streams, large datasets, etc.
 
 Some omissions: Although the iteration protocol is described, the
-notes don’t go into detail about creating iterable objects (i.e.,
-classes with `__iter__()` and `next()`).  In practice, I’ve found that
-it’s not necessary to do this so often (generators are often
-better/easier).  So, in the interest of time, I’ve made a conscious
+notes don't go into detail about creating iterable objects (i.e.,
+classes with `__iter__()` and `next()`).  In practice, I've found that
+it's not necessary to do this so often (generators are often
+better/easier).  So, in the interest of time, I've made a conscious
 decision to omit it.  Also not included are extended generators
 (coroutines) or uses of generators for concurrency (tasklets, etc.).
-That’s better covered in advanced courses.
+That's better covered in advanced courses.
 
 ## 7. Advanced Topics
 
 Basically this section is an assortment of more advanced topics that
-could have been covered earlier, but weren’t for various reasons
+could have been covered earlier, but weren't for various reasons
 related to course flow and content of the course exercises.  If you
 must know, I used to present this material earlier in the course, but
 found that students were already overloaded with enough information.
@@ -305,8 +305,8 @@ starting to get the hang of it.
 
 Topics include variadic function arguments (*args, **kwargs), lambda,
 closures, and decorators.  Discussion of decorators is only a tiny
-hint of what’s possible with metaprogramming.  Feel free to say more
-about what’s possible, but I’d probably stay out of metaclasses!
+hint of what's possible with metaprogramming.  Feel free to say more
+about what's possible, but I'd probably stay out of metaclasses!
 Lately, I have been demoing "numba" as an example of a more
 interesting decorator.
 

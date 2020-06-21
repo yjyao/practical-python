@@ -229,7 +229,7 @@ For example, make a dictionary that maps the name of a stock to the total number
 >>>
 ```
 
-This latter feature is known as a **dictionary comprehension**. Let’s tabulate:
+This latter feature is known as a **dictionary comprehension**. Let's tabulate:
 
 ```python
 >>> for s in portfolio:
@@ -254,7 +254,7 @@ those names that appear in the portfolio:
 
 Knowing how to use various combinations of list, set, and dictionary
 comprehensions can be useful in various forms of data processing.
-Here’s an example that shows how to extract selected columns from a
+Here's an example that shows how to extract selected columns from a
 CSV file.
 
 First, read a row of header information from a CSV file:
@@ -296,7 +296,7 @@ dictionary comprehension:
 >>>
 ```
 
-If you’re feeling comfortable with what just happened, read the rest
+If you're feeling comfortable with what just happened, read the rest
 of the file:
 
 ```python
@@ -314,12 +314,12 @@ Oh my, you just reduced much of the `read_portfolio()` function to a single stat
 
 List comprehensions are commonly used in Python as an efficient means
 for transforming, filtering, or collecting data.  Due to the syntax,
-you don’t want to go overboard—try to keep each list comprehension as
-simple as possible.  It’s okay to break things into multiple
-steps. For example, it’s not clear that you would want to spring that
+you don't want to go overboard—try to keep each list comprehension as
+simple as possible.  It's okay to break things into multiple
+steps. For example, it's not clear that you would want to spring that
 last example on your unsuspecting co-workers.
 
-That said, knowing how to quickly manipulate data is a skill that’s
+That said, knowing how to quickly manipulate data is a skill that's
 incredibly useful.  There are numerous situations where you might have
 to solve some kind of one-off problem involving data imports, exports,
 extraction, and so forth.  Becoming a guru master of list

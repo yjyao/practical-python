@@ -175,7 +175,7 @@ for the file `mortgage.py`.
 ### Exercise 1.7: Dave's mortgage
 
 Dave has decided to take out a 30-year fixed rate mortgage of $500,000
-with Guido’s Mortgage, Stock Investment, and Bitcoin trading
+with Guido's Mortgage, Stock Investment, and Bitcoin trading
 corporation.  The interest rate is 5% and the monthly payment is
 $2684.11.
 
@@ -243,7 +243,7 @@ Months 310
 
 ### Exercise 1.11: Bonus
 
-While you’re at it, fix the program to correct for the overpayment that occurs in the last month.
+While you're at it, fix the program to correct for the overpayment that occurs in the last month.
 
 ### Exercise 1.12: A Mystery
 

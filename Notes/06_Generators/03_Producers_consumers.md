@@ -102,7 +102,7 @@ You will notice that data incrementally flows through the different functions.
 ## Exercises
 
 For this exercise the `stocksim.py` program should still be running in the background.
-You’re going to use the `follow()` function you wrote in the previous exercise.
+You're going to use the `follow()` function you wrote in the previous exercise.
 
 ### Exercise 6.8: Setting up a simple pipeline
 

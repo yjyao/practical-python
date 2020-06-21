@@ -85,7 +85,7 @@ The `collections` module might be one of the most useful library
 modules for dealing with special purpose kinds of data handling
 problems such as tabulating and indexing.
 
-In this exercise, we’ll look at a few simple examples.  Start by
+In this exercise, we'll look at a few simple examples.  Start by
 running your `report.py` program so that you have the portfolio of
 stocks loaded in the interactive mode.
 
@@ -131,7 +131,7 @@ If you want to rank the values, do this:
 >>>
 ```
 
-Let’s grab another portfolio of stocks and make a new Counter:
+Let's grab another portfolio of stocks and make a new Counter:
 
 ```python
 >>> portfolio2 = read_portfolio('Data/portfolio2.csv')
@@ -144,7 +144,7 @@ Counter({'HPQ': 250, 'GE': 125, 'AA': 50, 'MSFT': 25})
 >>>
 ```
 
-Finally, let’s combine all of the holdings doing one simple operation:
+Finally, let's combine all of the holdings doing one simple operation:
 
 ```python
 >>> holdings

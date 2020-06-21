@@ -202,8 +202,8 @@ file row-by-row.
 Although reading the file is easy, you often want to do more with the
 data than read it.  For instance, perhaps you want to store it and
 start performing some calculations on it.  Unfortunately, a raw "row"
-of data doesn’t give you enough to work with. For example, even a
-simple math calculation doesn’t work:
+of data doesn't give you enough to work with. For example, even a
+simple math calculation doesn't work:
 
 ```python
 >>> row = ['AA', '100', '32.20']
@@ -241,14 +241,14 @@ shares and the price:
 >>>
 ```
 
-Is math broken in Python? What’s the deal with the answer of
+Is math broken in Python? What's the deal with the answer of
 3220.0000000000005?
 
 This is an artifact of the floating point hardware on your computer
 only being able to accurately represent decimals in Base-2, not
 Base-10.  For even simple calculations involving base-10 decimals,
 small errors are introduced. This is normal, although perhaps a bit
-surprising if you haven’t seen it before.
+surprising if you haven't seen it before.
 
 This happens in all programming languages that use floating point
 decimals, but it often gets hidden when printing. For example:
@@ -270,7 +270,7 @@ TypeError: 'tuple' object does not support item assignment
 >>>
 ```
 
-Although you can’t change tuple contents, you can always create a
+Although you can't change tuple contents, you can always create a
 completely new tuple that replaces the old one.
 
 ```python
@@ -355,7 +355,7 @@ attributes:
 
 ### Exercise 2.3: Some additional dictionary operations
 
-If you turn a dictionary into a list, you’ll get all of its keys:
+If you turn a dictionary into a list, you'll get all of its keys:
 
 ```python
 >>> list(d)
@@ -415,7 +415,7 @@ dict_keys(['name', 'shares', 'price', 'date'])
 ```
 
 Carefully notice that the `'account'` disappeared from `keys` even
-though you didn’t call `d.keys()` again.
+though you didn't call `d.keys()` again.
 
 A more elegant way to work with keys and values together is to use the
 `items()` method. This gives you `(key, value)` tuples:

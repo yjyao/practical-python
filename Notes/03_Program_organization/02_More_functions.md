@@ -263,7 +263,7 @@ functions, there are a lot of low-level "fiddly" bits and similar
 features.  For example, they both open a file and wrap it with the
 `csv` module and they both convert various fields into new types.
 
-If you were doing a lot of file parsing for real, you’d probably want
+If you were doing a lot of file parsing for real, you'd probably want
 to clean some of this up and make it more general purpose.  That's
 our goal.
 
@@ -272,7 +272,7 @@ Start this exercise by creating a new file called
 
 ### Exercise 3.3: Reading CSV Files
 
-To start, let’s just focus on the problem of reading a CSV file into a
+To start, let's just focus on the problem of reading a CSV file into a
 list of dictionaries.  In the file `fileparse.py`, define a
 function that looks like this:
 
@@ -314,13 +314,13 @@ Hint: `python3 -i fileparse.py`.
 >>>
 ```
 
-This is good except that you can’t do any kind of useful calculation
-with the data because everything is represented as a string.  We’ll
-fix this shortly, but let’s keep building on it.
+This is good except that you can't do any kind of useful calculation
+with the data because everything is represented as a string.  We'll
+fix this shortly, but let's keep building on it.
 
 ### Exercise 3.4: Building a Column Selector
 
-In many cases, you’re only interested in selected columns from a CSV
+In many cases, you're only interested in selected columns from a CSV
 file, not all of the data.  Modify the `parse_csv()` function so that
 it optionally allows user-specified columns to be picked out as
 follows:
@@ -339,7 +339,7 @@ follows:
 ```
 
 An example of a column selector was given in [Exercise 2.23](../02_Working_with_data/06_List_comprehension).
-However, here’s one way to do it:
+However, here's one way to do it:
 
 ```python
 # fileparse.py
@@ -395,7 +395,7 @@ Now, suppose the selected columns were as follows:
 ```
 
 To perform the proper selection, you have to map the selected column names to column indices in the file.
-That’s what this step is doing:
+That's what this step is doing:
 
 ```python
 >>> indices = [headers.index(colname) for colname in select ]
@@ -443,7 +443,7 @@ if types:
 
 ### Exercise 3.6: Working without Headers
 
-Some CSV files don’t include any header information.
+Some CSV files don't include any header information.
 For example, the file `prices.csv` looks like this:
 
 ```csv
@@ -464,14 +464,14 @@ by creating a list of tuples instead.  For example:
 >>>
 ```
 
-To make this change, you’ll need to modify the code so that the first
-line of data isn’t interpreted as a header line.  Also, you’ll need to
-make sure you don’t create dictionaries as there are no longer any
+To make this change, you'll need to modify the code so that the first
+line of data isn't interpreted as a header line.  Also, you'll need to
+make sure you don't create dictionaries as there are no longer any
 column names to use for keys.
 
 ### Exercise 3.7: Picking a different column delimitier
 
-Although CSV files are pretty common, it’s also possible that you
+Although CSV files are pretty common, it's also possible that you
 could encounter a file that uses a different column separator such as
 a tab or space.  For example, the file `Data/portfolio.dat` looks like
 this:
@@ -507,8 +507,8 @@ For example:
 
 ### Commentary
 
-If you’ve made it this far, you’ve created a nice library function
-that’s genuinely useful.  You can use it to parse arbitrary CSV files,
+If you've made it this far, you've created a nice library function
+that's genuinely useful.  You can use it to parse arbitrary CSV files,
 select out columns of interest, perform type conversions, without
 having to worry too much about the inner workings of files or the
 `csv` module.

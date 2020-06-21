@@ -239,16 +239,16 @@ def portfolio_cost(filename):
 Using this code as a rough guide, create a new file `report.py`.  In
 that file, define a function `read_portfolio(filename)` that opens a
 given portfolio file and reads it into a list of tuples.  To do this,
-you’re going to make a few minor modifications to the above code.
+you're going to make a few minor modifications to the above code.
 
-First, instead of defining `total_cost = 0`, you’ll make a variable
-that’s initially set to an empty list. For example:
+First, instead of defining `total_cost = 0`, you'll make a variable
+that's initially set to an empty list. For example:
 
 ```python
 portfolio = []
 ```
 
-Next, instead of totaling up the cost, you’ll turn each row into a
+Next, instead of totaling up the cost, you'll turn each row into a
 tuple exactly as you just did in the last exercise and append it to
 this list. For example:
 
@@ -258,7 +258,7 @@ for row in rows:
     portfolio.append(holding)
 ```
 
-Finally, you’ll return the resulting `portfolio` list.
+Finally, you'll return the resulting `portfolio` list.
 
 Experiment with your function interactively (just a reminder that in
 order to do this, you first have to run the `report.py` program in the
@@ -397,11 +397,11 @@ To do this, start with an empty dictionary and start inserting values
 into it just as you did above. However, you are reading the values
 from a file now.
 
-We’ll use this data structure to quickly lookup the price of a given
+We'll use this data structure to quickly lookup the price of a given
 stock name.
 
-A few little tips that you’ll need for this part. First, make sure you
-use the `csv` module just as you did before—there’s no need to
+A few little tips that you'll need for this part. First, make sure you
+use the `csv` module just as you did before—there's no need to
 reinvent the wheel here.
 
 ```python
@@ -423,7 +423,7 @@ The other little complication is that the `Data/prices.csv` file may
 have some blank lines in it. Notice how the last row of data above is
 an empty list—meaning no data was present on that line.
 
-There’s a possibility that this could cause your program to die with
+There's a possibility that this could cause your program to die with
 an exception.  Use the `try` and `except` statements to catch this as
 appropriate.  Thought: would it be better to guard against bad data with
 an `if`-statement instead?

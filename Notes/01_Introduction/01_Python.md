@@ -65,7 +65,7 @@ On your machine, start Python and use it as a calculator to solve the
 following problem.
 
 Lucky Larry bought 75 shares of Google stock at a price of $235.14 per
-share. Today, shares of Google are priced at $711.25. Using Python’s
+share. Today, shares of Google are priced at $711.25. Using Python's
 interactive mode as a calculator, figure out how much profit Larry would
 make if he sold all of his shares.
 
@@ -91,14 +91,14 @@ Use the `help()` command to get help on the `abs()` function. Then use
 `help()` to get help on the `round()` function. Type `help()` just by
 itself with no value to enter the interactive help viewer.
 
-One caution with `help()` is that it doesn’t work for basic Python
+One caution with `help()` is that it doesn't work for basic Python
 statements such as `for`, `if`, `while`, and so forth (i.e., if you type
-`help(for)` you’ll get a syntax error). You can try putting the help
-topic in quotes such as `help("for")` instead. If that doesn’t work,
-you’ll have to turn to an internet search.
+`help(for)` you'll get a syntax error). You can try putting the help
+topic in quotes such as `help("for")` instead. If that doesn't work,
+you'll have to turn to an internet search.
 
 Followup: Go to <http://docs.python.org> and find the documentation for
-the `abs()` function (hint: it’s found under the library reference
+the `abs()` function (hint: it's found under the library reference
 related to built-in functions).
 
 ### Exercise 1.3: Cutting and Pasting
@@ -115,7 +115,7 @@ starting after the `>>>` prompt and going up to, but not any further
 than the first blank line or the next `>>>` prompt (whichever appears
 first). Select "copy" from the browser, go to the Python window, and
 select "paste" to copy it into the Python shell. To get the code to
-run, you may have to hit "Return" once after you’ve pasted it in.
+run, you may have to hit "Return" once after you've pasted it in.
 
 Use cut-and-paste to execute the Python statements in this session:
 
@@ -173,8 +173,8 @@ Note: This service only reports arrival times within the next 30 minutes.
 If you're in a different timezone and it happens to be 3am in Chicago, you
 might not get any output.  You use the tracker link above to double check.
 
-If the first import statement `import urllib.request` fails, you’re
-probably using Python 2. For this course, you need to make sure you’re
+If the first import statement `import urllib.request` fails, you're
+probably using Python 2. For this course, you need to make sure you're
 using Python 3.6 or newer. Go to <https://www.python.org> to download
 it if you need it.
 

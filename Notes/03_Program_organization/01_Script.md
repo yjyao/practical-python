@@ -245,7 +245,7 @@ for row in report:
 ...
 ```
 
-In this exercise, we’re going take this program and organize it a
+In this exercise, we're going take this program and organize it a
 little more strongly around the use of functions.
 
 ### Exercise 3.1: Structuring a program as a collection of functions

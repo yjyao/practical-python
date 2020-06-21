@@ -149,7 +149,7 @@ print('Total cost:', cost)
 ```
 
 When you run your program, you should see the same output as before.
-After you’ve run your program, you can also call your function
+After you've run your program, you can also call your function
 interactively by typing this:
 
 ```bash
@@ -181,7 +181,7 @@ ValueError: invalid literal for int() with base 10: ''
 >>>
 ```
 
-At this point, you’re faced with a decision. To make the program work
+At this point, you're faced with a decision. To make the program work
 you can either sanitize the original input file by eliminating bad
 lines or you can modify your code to handle the bad lines in some
 manner.
@@ -219,7 +219,7 @@ of how it works:
 
 One nice thing about the `csv` module is that it deals with a variety
 of low-level details such as quoting and proper comma splitting.  In
-the above output, you’ll notice that it has stripped the double-quotes
+the above output, you'll notice that it has stripped the double-quotes
 away from the names in the first column.
 
 Modify your `pcost.py` program so that it uses the `csv` module for
@@ -241,8 +241,8 @@ cost = portfolio_cost('Data/portfolio.csv')
 print('Total cost:', cost)
 ```
 
-That’s fine for learning and testing, but in a real program you
-probably wouldn’t do that.
+That's fine for learning and testing, but in a real program you
+probably wouldn't do that.
 
 Instead, you might pass the name of the file in as an argument to a
 script. Try changing the bottom part of the program as follows:
@@ -267,7 +267,7 @@ print('Total cost:', cost)
 
 `sys.argv` is a list that contains passed arguments on the command line (if any).
 
-To run your program, you’ll need to run Python from the
+To run your program, you'll need to run Python from the
 terminal.
 
 For example, from bash on Unix:
